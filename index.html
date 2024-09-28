@@ -8,12 +8,12 @@
   </head>
   <body>
     <header>
-      <div class="container">
+      <div class="container heal">
         <div class="logo">
           <img src="logo.png" alt="Midas Team" />
         </div>
         <nav>
-          <ul>
+          <ul class="nav-list" id="nav-list">
             <li><a href="#">Home</a></li>
             <li><a href="#">Porque o Midas?</a></li>
             <li><a href="#">Instrutores</a></li>
@@ -24,12 +24,20 @@
         <div class="login">
           <a href="#">Login Jogadores</a>
         </div>
+        <!-- Menu Hambúrguer -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </header>
 
     <section class="hero">
       <div class="container rr">
-        <h1>CONSTRUA A SUA HISTÓRIA COM O <span><br>MIDAS TEAM</span></h1>
+        <h1>
+          CONSTRUA A SUA HISTÓRIA COM O <span><br />MIDAS TEAM</span>
+        </h1>
         <p>
           Mais do que um acordo de backing/staking, damos todos recursos para
           você ser vencedor em todos os limites.
@@ -39,20 +47,21 @@
     </section>
 
     <section class="info">
-      <div class="container">
+      <div class="container r2t">
         <p>
           A melhor maneira de crescer como um time, é dando oportunidade e
           permitindo que todos cresçam juntos!
         </p>
         <p>
-          Este ideal permite um <strong>plano de carreira</strong> para que
+          Este ideal permite um
+          <strong style="color: #ffd700">plano de carreira</strong> para que
           nossos jogadores alcancem novos patamares dentro do time.
         </p>
       </div>
     </section>
 
     <section class="hashtags">
-      <div class="container">
+      <div class="container rr2">
         <div class="hashtags-list">
           <span>#GRINDHARD</span>
           <span>#HAVEFUN</span>
@@ -60,55 +69,110 @@
         </div>
         <p>
           Isso pode parecer apenas hashtags de redes sociais, mas para nós vai
-          muito mais além... Cada jogador tem a sua história, e NÓS QUEREMOS
-          FAZER PARTE DA SUA!
+          muito mais além...
+          <span class="node">
+            <br />Propiciamos um ambiente saudável ao desenvolvimento,
+            valorizamos o processo e não apenas o produto final. Cada jogador
+            tem a sua história, E
+          </span>
+          <span class="col">NÓS QUEREMOS FAZER PARTE DA SUA</span>
         </p>
       </div>
     </section>
     <section class="why-midas">
-      <div class="container">
-        <h2>POR QUÊ O MIDAS?</h2>
-        <ul class="features-list">
-          <li>Instrutores extremamente capacitados</li>
-          <li>Gerenciamento de bankroll</li>
-          <li>Table selection personalizada</li>
-          <li>Acompanhamento psicológico</li>
-          <li>Biblioteca com mais de 750 vídeos</li>
-          <li>Fórum para debate de erros entre players e instrutores</li>
-          <li>Acompanhamento mensal com o CIO para feedback individual</li>
-          <li>
-            Leak Buster - Ferramenta exclusiva para aceleração de evolução
-            técnica
-          </li>
-        </ul>
+      <div class="container midasc">
+        <div class="bost">
+          <h2>POR QUÊ O MIDAS?</h2>
+          <ul class="features-list">
+            <li>
+              <img src="images/marca-de-verificacao.png" alt="Marca" />
+              Instrutores extremamente capacitados
+            </li>
+            <li>
+              <img src="images/marca-de-verificacao.png" alt="Marca" />
+              Gerenciamento de bankroll
+            </li>
+            <li>
+              <img src="images/marca-de-verificacao.png" alt="Marca" /> Table
+              selection personalizada
+            </li>
+            <li>
+              <img src="images/marca-de-verificacao.png" alt="Marca" />
+              Acompanhamento psicológico
+            </li>
+            <li>
+              <img src="images/marca-de-verificacao.png" alt="Marca" />
+              Biblioteca com mais de 750 vídeos
+            </li>
+            <li>
+              <img src="images/marca-de-verificacao.png" alt="Marca" /> Fórum
+              para debate de erros entre players e instrutores
+            </li>
+            <li>
+              <img src="images/marca-de-verificacao.png" alt="Marca" />
+              Acompanhamento mensal com o CIO para feedback individual
+            </li>
+            <li>
+              <img src="images/marca-de-verificacao.png" alt="Marca" /> Leak
+              Buster - Ferramenta exclusiva para aceleração de evolução técnica
+            </li>
+          </ul>
+        </div>
         <div class="team-image">
-          <img src="team-photo.jpg" alt="Equipe Midas" />
+          <img src="images/bdf.jfif" alt="Equipe Midas" />
         </div>
       </div>
     </section>
 
-    <section class="midas-store">
-      <div class="container">
-        <h2><span>MIDAS</span> STORE</h2>
-        <p>
-          O MIDAS STORE é uma loja exclusiva de benefícios para nossos
-          jogadores. Mensalmente, aqueles que batem as metas recebem Midas Coins
-          para trocar por produtos como:
+    <div class="section-container">
+      <div class="info-container">
+        <h2 class="section-title">#GoldenMethod</h2>
+        <p class="description">
+          Nossa metodologia (#goldenmethod) foi desenvolvida com base na
+          experiência adquirida por anos formando dezenas de grandes jogadores.
         </p>
-        <ul class="store-benefits">
-          <li>Aulas e reviews com nossos instrutores</li>
-          <li>
-            Licenças de softwares de apoio como piosolver, holdem resources,
-            entre outros
-          </li>
-          <li>Roupas exclusivas do Midas Poker Team (Em breve nova coleção)</li>
-          <li>Livros sobre poker</li>
-          <li>Eletrônicos (caixa de som, videogame, tablets, etc.)</li>
-          <li>Periféricos (cadeiras, fone, monitor, teclados, mouse, etc.)</li>
-          <li>Vale-compras em outras lojas e muito mais!</li>
-        </ul>
-        <a href="#" class="cta-button">FAÇA PARTE DESSE TIME</a>
+        <p class="description">
+          O departamento técnico é o coração do <strong>Golden Team</strong>. É
+          dele que vêm todos os estudos, análises de população e a definição das
+          divisões em que o jogador está alocado.
+        </p>
+        <p class="description">
+          Atualmente possuímos <strong>10 divisões</strong> que abrangem desde
+          os micro stakes até os high stakes.
+        </p>
+        <p class="description">
+          Periodicamente, ocorre uma análise individual profunda de todas as
+          stats do player, permitindo uma otimização de tempo e uma evolução
+          mais rápida de suas capacidades técnicas.
+        </p>
+        <p class="description">
+          Os temas das aulas semanais de cada divisão são definidos de acordo
+          com os <strong>“leaks”</strong> em comum daquela equipe. Já os temas
+          das aulas individuais são específicos e escolhidos a dedo para
+          corrigir os pontos fracos de cada jogador.
+        </p>
+      </div>
+      <div class="image-container">
+        <img src="images/pngg.png" alt="Golden Chip" class="golden-chip-img" />
+      </div>
+    </div>
+    <section class="subscribe-section">
+      <div class="content-container">
+        <h1 class="subscribe-title">Não Perca a Oportunidade!</h1>
+        <p class="subscribe-text">
+          Junte-se a centenas de pessoas que estão evoluindo suas habilidades.
+          Inscreva-se agora para receber conteúdo exclusivo e melhorar suas
+          técnicas. A mudança começa aqui!
+        </p>
+        <a href="#inscricao" class="subscribe-button">Inscreva-se Agora</a>
       </div>
     </section>
+    <footer>
+      <p>
+        Copyright © 2024 Design and Developed By
+        <a href="https://webstones.com.br/">Web Stones</a>
+      </p>
+    </footer>
+    <script src="script.js" defer></script>
   </body>
 </html>
