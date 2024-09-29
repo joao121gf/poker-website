@@ -803,6 +803,10 @@ li strong {
 
 /* Tornar o formulário responsivo */
 @media screen and (max-width: 768px) {
+  nav {
+    position: relative;
+    left: 20px;
+  }
   .highlight-image {
     width: 78% !important;
     height: auto;
@@ -1040,4 +1044,28 @@ html {
 }
 .linkk {
   color: #ffcc00 !important;
+}
+.nav-list .show {
+  position: relative;
+}
+nav ul {
+  display: none; /* Esconde a lista por padrão */
+  /* Outros estilos, se necessário */
+}
+
+nav ul.show {
+  display: block; /* Mostra a lista quando a classe "show" é adicionada */
+}
+
+.hamburger {
+  cursor: pointer; /* Adiciona um cursor de ponteiro ao botão de hambúrguer */
+}
+
+/* Estilo quando o menu está ativo */
+.hamburger.active {
+  /* Adicione estilos se necessário, por exemplo, uma transformação */
+}
+nav ul.show {
+  display: block;
+  position: relative;
 }
