@@ -708,3 +708,9 @@ nav ul li a {
     align-items: flex-start;
   }
 }
+.awards {
+  padding-top: 34px;
+}
+ul {
+  list-style: none;
+}
