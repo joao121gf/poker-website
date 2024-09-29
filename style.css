@@ -35,7 +35,7 @@ body {
 .rr {
   display: block;
   width: 33%;
-  margin-top: 175px;
+  margin-top: 182px;
 }
 
 /* Estilos de cabeçalho */
@@ -134,7 +134,7 @@ li {
   display: grid;
   font-weight: 900;
   font-style: italic;
-  font-size: 1.5em;
+  font-size: 1.3em;
   line-height: 38px;
 }
 
@@ -199,7 +199,7 @@ li {
 .features-list {
   list-style-type: none;
   padding: 0;
-  font-size: 1.2em;
+  font-size: 1em;
   line-height: 1.6;
   color: #333;
   margin-bottom: 30px;
@@ -267,10 +267,11 @@ li {
 }
 
 .features-list li {
-  display: flex;
+  display: inline-masonry;
   align-items: center;
   padding-bottom: 10px;
   font-weight: 600;
+  align-items: center;
 }
 
 .store-benefits li::before {
@@ -713,4 +714,324 @@ nav ul li a {
 }
 ul {
   list-style: none;
+}
+.bost {
+  width: 39%;
+}
+
+li strong {
+  white-space: nowrap;
+}
+.contact-section {
+  background-color: #0b3d91; /* Azul escuro remetendo à mesa de poker */
+  padding: 40px;
+  border-radius: 10px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.content-container {
+  max-width: 600px;
+  width: 100%;
+  background-color: #1a1a1a;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.contact-title {
+  font-size: 1.8em; /* Menor tamanho de letra */
+  margin-bottom: 20px;
+  color: #ffd700; /* Dourado para lembrar cartas de ouro */
+}
+
+.contact-text {
+  font-size: 0.9em; /* Menor tamanho de letra */
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 100%;
+}
+
+.contact-form label {
+  font-weight: bold;
+  font-size: 0.9em; /* Menor tamanho de letra */
+  align-self: flex-start;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f4f4f4;
+  font-size: 0.9em; /* Menor tamanho de letra */
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: 2px solid #ffd700; /* Dourado ao focar */
+}
+
+.contact-button {
+  background-color: #ffd700; /* Dourado */
+  color: #000000; /* Azul escuro */
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: 600 !important;
+}
+
+.contact-button:hover {
+  background-color: #ffa500; /* Laranja ao passar o mouse */
+}
+
+/* Tornar o formulário responsivo */
+@media screen and (max-width: 768px) {
+  .highlight-image {
+    width: 78% !important;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+  }
+  .highlight-card {
+    height: 332px !important;
+  }
+  .highlight-text {
+    font-size: 0.8em !important;
+  }
+  .bost {
+    width: 94%;
+  }
+  .contact-section {
+    margin-top: 800px !important;
+  }
+  .contact-section {
+    padding: 0px !important;
+  }
+  .image-container {
+    height: 120px !important;
+  }
+  .content-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .contact-title {
+    font-size: 1.5em; /* Ajustar o título para telas menores */
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.8em;
+  }
+
+  .contact-button {
+    font-size: 0.9em;
+    padding: 10px 20px;
+  }
+}
+.highlights-section {
+  background-color: black; /* Fundo preto */
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center; /* Centraliza a container */
+  height: 800px;
+}
+
+.highlights-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centraliza os cartões */
+  width: 80%; /* Largura de 80% */
+  align-items: center;
+}
+
+.highlight-card {
+  background-color: #ffffff;
+  border: 2px solid yellow;
+  border-radius: 10px;
+  margin: 15px;
+  padding: 20px;
+  width: 100%;
+  height: 430px;
+  max-width: 250px;
+  box-sizing: border-box;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.highlight-card:hover {
+  transform: scale(1.05); /* Leve aumento no hover */
+}
+
+.highlight-image {
+  width: 100%;
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 10px 10px 0 0; /* Arredondar os cantos superiores */
+}
+
+.highlight-title {
+  font-size: 1.5em;
+  margin: 10px 0;
+  font-weight: bold;
+  color: rgb(0, 0, 0); /* Título em amarelo */
+}
+
+.highlight-text {
+  font-size: 1em;
+  color: rgb(0, 0, 0); /* Texto em branco */
+}
+
+/* Media queries para responsividade */
+@media (min-width: 600px) {
+  .highlight-card {
+    width: calc(50% - 40px); /* 2 colunas em telas médias */
+  }
+}
+
+@media (min-width: 900px) {
+  .highlight-card {
+    width: calc(25% - 40px); /* 4 colunas em telas grandes */
+  }
+}
+
+.image-container {
+  position: relative;
+  width: 100%; /* Ajuste conforme necessário */
+  height: 300px; /* Ajuste conforme necessário */
+  overflow: hidden; /* Para esconder qualquer parte da imagem que sai da caixa */
+  display: flex; /* Usado para centralizar a imagem */
+  justify-content: center; /* Centraliza a imagem horizontalmente */
+  align-items: center; /* Centraliza a imagem verticalmente */
+}
+
+.golden-chip-img {
+  animation: float 2s ease-in-out infinite; /* Animação de flutuação */
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0); /* Posição inicial */
+  }
+  50% {
+    transform: translateY(-25px); /* Move para cima 5px */
+  }
+  100% {
+    transform: translateY(0); /* Volta para a posição inicial */
+  }
+}
+.highlights-section {
+  background: url("images/novos/9.jpg") no-repeat center center; /* Substitua pela sua imagem */
+  background-size: cover; /* Faz a imagem do fundo cobrir toda a área */
+  padding: 40px 20px; /* Espaçamento interno para o contêiner */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+  color: white; /* Cor do texto */
+}
+
+.hashtags {
+  background: url("images/novos/9.jpg") no-repeat center center; /* Substitua pela sua imagem */
+  background-size: cover; /* Faz a imagem do fundo cobrir toda a área */
+  padding: 40px 20px; /* Espaçamento interno para o contêiner */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
+  color: white; /* Cor do texto */
+}
+
+.section-title {
+  font-size: 2em; /* Ajuste o tamanho do título */
+  text-align: center; /* Centraliza o título */
+  margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.description,
+.highlight-text,
+.contact-text {
+  font-size: 1em; /* Tamanho da fonte menor para as descrições */
+  line-height: 1.5; /* Espaçamento entre linhas */
+}
+
+.contact-section {
+  margin-top: 40px; /* Espaçamento acima da seção de contato */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Fundo semi-transparente para a seção de contato */
+  padding: 40px; /* Espaçamento interno para a seção de contato */
+  border-radius: 10px; /* Bordas arredondadas */
+}
+
+.contact-form label {
+  color: #ffd700; /* Cor dos rótulos do formulário */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%; /* Largura total para os campos do formulário */
+  padding: 10px; /* Espaçamento interno dos campos */
+  margin-bottom: 15px; /* Espaçamento abaixo dos campos */
+  border: none; /* Sem borda */
+  border-radius: 5px; /* Bordas arredondadas */
+}
+
+.contact-button {
+  background-color: #ffd700; /* Cor do botão */
+  color: black; /* Cor do texto do botão */
+  border: none; /* Sem borda */
+  padding: 10px 20px; /* Espaçamento interno do botão */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor de pointer ao passar o mouse */
+  font-size: 1em; /* Tamanho da fonte do botão */
+  transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.contact-button:hover {
+  background-color: #ffcc00; /* Cor do botão ao passar o mouse */
+}
+
+.hero {
+  position: relative; /* Para permitir que a moeda fique posicionada em relação a essa seção */
+  overflow: hidden; /* Oculta qualquer coisa que saia do container */
+  background-color: #2c3e50; /* Cor de fundo da seção */
+  padding: 50px 0; /* Ajuste o padding conforme necessário */
+}
+
+.coin {
+  position: absolute; /* Para permitir que a moeda flutue sobre o texto */
+  top: 10%; /* Posição vertical da moeda (ajuste conforme necessário) */
+  left: 50%; /* Centraliza horizontalmente */
+  transform: translateX(-50%); /* Centraliza com base na própria largura */
+  width: 100px; /* Largura da moeda */
+  height: 100px; /* Altura da moeda */
+  background-image: url("images/novos/money.png"); /* Imagem da moeda */
+  background-size: cover; /* Cobre todo o elemento */
+  animation: rotate 10s linear infinite; /* Animação de rotação */
+  z-index: 10; /* Faz com que a moeda fique acima do texto */
+}
+
+/* Animação de rotação */
+@keyframes rotate {
+  from {
+    transform: translateX(-50%) rotateY(0deg); /* Começa sem rotação */
+  }
+  to {
+    transform: translateX(-50%) rotateY(360deg); /* Termina com rotação completa */
+  }
 }
