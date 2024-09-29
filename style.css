@@ -1035,3 +1035,9 @@ li strong {
     transform: translateX(-50%) rotateY(360deg); /* Termina com rotação completa */
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+.linkk {
+  color: #ffcc00 !important;
+}
