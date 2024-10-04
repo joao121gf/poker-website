@@ -1491,4 +1491,94 @@ h2 {
   .um {
     padding: 0px !important;
   }
+  .section-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-color: #000;
+    width: 100%;
+    color: #fff;
+    margin: 0 auto;
+    padding: 200px 0px;
+    font-family: poppins;
+    padding: 200px 300px;
+    max-width: 2500px;
+  }
+}
+@media (max-width: 1024px) {
+  .section-container {
+    padding: 20px;
+  }
+
+  .info-container,
+  .image-container {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .section-title {
+    font-size: 1.8em;
+  }
+
+  .cta-button {
+    padding: 12px 25px;
+    font-size: 1em;
+  }
+
+  .golden-chip-img {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.5em;
+  }
+
+  .description,
+  .prizes li {
+    font-size: 1em;
+  }
+
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 0.95em;
+  }
+  .dil {
+    margin-top: 100px;
+  }
+  .info-container {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-container {
+    padding: 15px;
+  }
+
+  .section-title {
+    font-size: 1.3em;
+  }
+
+  .description {
+    font-size: 0.95em;
+  }
+
+  .prizes li {
+    font-size: 0.95em;
+  }
+
+  .cta-button {
+    padding: 8px 15px;
+    font-size: 0.85em;
+  }
+
+  .golden-chip-img {
+    max-width: 100%;
+  }
+  .dil {
+    margin-top: 100px;
+  }
 }
