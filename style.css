@@ -423,10 +423,13 @@ li {
   align-items: center;
   padding: 40px;
   background-color: #000;
-  width: 64%;
+  width: 100%;
   color: #fff;
   margin: 0 auto;
   padding: 200px 0px;
+  font-family: poppins;
+  padding: 200px 300px;
+  max-width: 2500px;
 }
 
 .info-container {
@@ -569,6 +572,7 @@ footer p a {
 }
 footer p {
   font-size: 0.6em;
+  background-color: black;
 }
 
 @media (max-width: 768px) {
@@ -727,11 +731,14 @@ ul {
 
 li strong {
   white-space: nowrap;
+  font-size: 1.5em;
+}
+.tot {
+  background-color: #e50914 !important;
 }
 .contact-section {
   background-color: #0b3d91; /* Azul escuro remetendo à mesa de poker */
   padding: 40px;
-  border-radius: 10px;
   color: white;
   font-family: "Poppins", sans-serif;
   text-align: center;
@@ -753,7 +760,7 @@ li strong {
 .contact-title {
   font-size: 1.8em; /* Menor tamanho de letra */
   margin-bottom: 20px;
-  color: #ffd700; /* Dourado para lembrar cartas de ouro */
+  color: #e50914; /* Dourado para lembrar cartas de ouro */
 }
 
 .contact-text {
@@ -949,7 +956,6 @@ li strong {
   background: url("images/novos/9.jpg") no-repeat center center; /* Substitua pela sua imagem */
   background-size: cover; /* Faz a imagem do fundo cobrir toda a área */
   padding: 40px 20px; /* Espaçamento interno para o contêiner */
-  border-radius: 10px; /* Bordas arredondadas */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
   color: white; /* Cor do texto */
 }
@@ -958,15 +964,15 @@ li strong {
   background: url("images/novos/9.jpg") no-repeat center center; /* Substitua pela sua imagem */
   background-size: cover; /* Faz a imagem do fundo cobrir toda a área */
   padding: 40px 20px; /* Espaçamento interno para o contêiner */
-  border-radius: 10px; /* Bordas arredondadas */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* Sombra para dar profundidade */
   color: white; /* Cor do texto */
 }
 
 .section-title {
-  font-size: 2em; /* Ajuste o tamanho do título */
-  text-align: center; /* Centraliza o título */
-  margin-bottom: 20px; /* Espaçamento abaixo do título */
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 20px;
+  text-align: left;
 }
 
 .description,
@@ -977,19 +983,17 @@ li strong {
 }
 
 .contact-section {
-  margin-top: 40px; /* Espaçamento acima da seção de contato */
-  background: rgba(
-    0,
-    0,
-    0,
-    0.7
-  ); /* Fundo semi-transparente para a seção de contato */
-  padding: 40px; /* Espaçamento interno para a seção de contato */
-  border-radius: 10px; /* Bordas arredondadas */
+  margin-top: 40px;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  background-color: black;
+  margin: 0 auto;
 }
-
+.footer {
+  background-color: black !important;
+}
 .contact-form label {
-  color: #ffd700; /* Cor dos rótulos do formulário */
+  color: #e50914; /* Cor dos rótulos do formulário */
 }
 
 .contact-form input,
@@ -1002,7 +1006,7 @@ li strong {
 }
 
 .contact-button {
-  background-color: #ffd700; /* Cor do botão */
+  background-color: #e50914; /* Cor do botão */
   color: black; /* Cor do texto do botão */
   border: none; /* Sem borda */
   padding: 10px 20px; /* Espaçamento interno do botão */
@@ -1172,7 +1176,7 @@ header {
 
 /* Seção de Categorias */
 .categories {
-  padding: 200px 0;
+  padding: 150px 0;
 }
 
 .category-grid {
@@ -1227,6 +1231,13 @@ header {
   letter-spacing: 1px;
   font-weight: 500;
   color: #e50914;
+}
+
+.category-item h2 {
+  font-family: "Anton", sans-serif;
+  letter-spacing: 1px;
+  font-size: 43px;
+  font-weight: 100;
 }
 .info-below-header {
   background-color: #000;
@@ -1393,4 +1404,8 @@ h2 {
   margin-bottom: 10px;
   filter: invert(24%) sepia(89%) saturate(6538%) hue-rotate(354deg)
     brightness(96%) contrast(106%);
+}
+.info-container h2 {
+  font-family: "Anton", sans-serif;
+  color: white;
 }
