@@ -7,10 +7,11 @@
 
 /* Fonte importada do Google */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 /* Estilos principais */
 body {
-  font-family: "Poppins";
+  font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Helvetica Neue", Arial, sans-serif;
   background-color: #000;
   color: #fff;
   line-height: 1.6;
@@ -139,7 +140,7 @@ li {
 }
 
 .col {
-  color: #ffd700;
+  color: #e50914;
   font-weight: 600;
 }
 
@@ -157,8 +158,11 @@ li {
 }
 
 .hashtags-list span {
-  font-size: 1.5em;
-  color: #ffd700;
+  font-size: 3.5em;
+  color: #ffffff;
+  padding: 5px;
+  font-family: "Anton", sans-serif;
+  font-weight: 200;
 }
 
 .midas c {
@@ -174,9 +178,11 @@ li {
 }
 
 .hashtags p {
-  font-size: 1em;
+  font-size: 1.5em;
   width: 35%;
   text-align: left;
+  font-weight: 700;
+  text-shadow: 6px 2px 9px #2b2300;
 }
 
 /* Estilos da seção why-midas */
@@ -440,7 +446,7 @@ li {
 }
 
 strong {
-  color: #ffbf00;
+  color: #e50914;
 }
 
 .image-container {
@@ -1068,4 +1074,323 @@ nav ul.show {
 nav ul.show {
   display: block;
   position: relative;
+}
+
+.info-below-header {
+  width: 100%;
+  max-width: 2600px;
+  background-color: #000;
+}
+
+.box-heal {
+  width: 80%;
+  margin: 0 auto;
+}
+.box-heal ul {
+  display: flex;
+  gap: 20px;
+}
+.box-heal ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #000;
+  padding: 20px 0;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo img {
+  max-width: 150px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list li {
+  margin-left: 20px;
+}
+
+.nav-list li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.login .link-contact {
+  background-color: #e50914;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 3px;
+}
+
+/* Banner principal */
+.hero-banner {
+  background-color: #000;
+  text-align: center;
+  padding: 50px 0;
+  border-bottom: 5px solid #e50914;
+}
+
+.hero-banner h1 {
+  color: #e50914;
+  font-size: 48px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+/* Seção de Categorias */
+.categories {
+  padding: 200px 0;
+}
+
+.category-grid {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.category-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 20px;
+  max-width: 30%;
+}
+
+.category-item img {
+  max-width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.category-item h2 {
+  font-size: 33px;
+  text-transform: uppercase;
+  margin: 20px 0;
+  color: #e50914;
+}
+
+.category-item p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  background-color: #000000;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 3px;
+}
+.bug {
+  width: 96%;
+}
+.cta-button:hover {
+  background-color: #e50914;
+}
+.container h1 {
+  font-family: "Anton", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #e50914;
+}
+.info-below-header {
+  background-color: #000;
+  width: 100%;
+}
+
+/* Geral */
+.welcome-pokerstars {
+  background-color: #000;
+  color: #fff;
+  padding: 50px 0;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.container-welcome {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.text-content h1 {
+  font-family: "Anton", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #e50914;
+  font-size: 37px;
+}
+
+.master {
+  font-family: "Anton", sans-serif;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #e50914;
+  font-size: 37px;
+}
+
+.text-content p {
+  font-size: 18px;
+  max-width: 500px;
+}
+
+.image-content img {
+  max-width: 600px;
+  height: auto;
+}
+.cardd {
+  width: 400px;
+}
+/* Responsividade */
+@media (max-width: 1024px) {
+  .container-welcome {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .text-content h1 {
+    font-size: 36px;
+  }
+
+  .image-content img {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-content h1 {
+    font-size: 28px;
+  }
+
+  .text-content p {
+    font-size: 16px;
+  }
+}
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+/* Card container */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Individual card styles */
+.card {
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.icon {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.card strong {
+  font-size: 1.6em;
+  display: block;
+  margin-bottom: auto;
+  line-height: 32px;
+  font-weight: 500;
+  font-family: "Anton", sans-serif;
+  padding-bottom: 15px;
+  color: black;
+}
+
+.card p {
+  font-size: 0.95em;
+  line-height: 1.4;
+  font-family: poppins;
+  color: #676767;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.notf {
+  display: block !important;
+}
+.icon {
+  width: 50px;
+  margin-bottom: 10px;
+  filter: invert(24%) sepia(89%) saturate(6538%) hue-rotate(354deg)
+    brightness(96%) contrast(106%);
 }
