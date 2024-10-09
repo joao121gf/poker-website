@@ -805,7 +805,9 @@ li strong {
   transition: background-color 0.3s ease;
   font-weight: 600 !important;
 }
-
+.lgg {
+  width: 30%;
+}
 .contact-button:hover {
   background-color: #ffa500; /* Laranja ao passar o mouse */
 }
